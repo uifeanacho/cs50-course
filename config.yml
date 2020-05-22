@@ -1,0 +1,16 @@
+title: CS50
+description: Basics of programming
+template:
+  repo: cs50-template
+  name: cs50
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
